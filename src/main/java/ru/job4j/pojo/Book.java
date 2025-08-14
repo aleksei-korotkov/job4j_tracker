@@ -24,4 +24,5 @@ public class Book {
     public void setNumberPages(int numberPages) {
         this.numberPages = numberPages;
     }
+
 }
