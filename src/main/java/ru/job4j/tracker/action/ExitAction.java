@@ -5,6 +5,7 @@ import ru.job4j.tracker.output.Output;
 import ru.job4j.tracker.Tracker;
 
 public class ExitAction implements UserAction {
+
     private final Output output;
 
     public ExitAction(Output output) {

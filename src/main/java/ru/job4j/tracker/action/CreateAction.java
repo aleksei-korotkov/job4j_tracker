@@ -6,6 +6,7 @@ import ru.job4j.tracker.output.Output;
 import ru.job4j.tracker.Tracker;
 
 public class CreateAction implements UserAction {
+
     private final Output output;
 
     public CreateAction(Output output) {
