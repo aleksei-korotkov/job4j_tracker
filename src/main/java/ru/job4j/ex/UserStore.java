@@ -6,6 +6,7 @@ public class UserStore {
         for (User element : users) {
             if (element.getUsername().equals(login)) {
                 user = element;
+                break;
             }
         }
         if (user == null) {
