@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StartUI {
+
     private final Output output;
 
     public StartUI(Output output) {

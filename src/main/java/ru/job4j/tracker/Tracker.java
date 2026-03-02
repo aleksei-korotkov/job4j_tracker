@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tracker {
+
     List<Item> items = new ArrayList<>(100);
     private int ids = 1;
 
