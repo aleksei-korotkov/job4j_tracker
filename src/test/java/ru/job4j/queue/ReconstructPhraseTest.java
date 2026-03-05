@@ -7,7 +7,6 @@ import java.util.LinkedList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ReconstructPhraseTest {
-
     @Test
     void whenSloganOfLanguageJava() {
         Deque<Character> evenElements = new LinkedList<>(
