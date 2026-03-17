@@ -1,12 +1,10 @@
 package ru.job4j.collection;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class UserTest {
