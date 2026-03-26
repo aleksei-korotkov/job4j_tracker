@@ -6,6 +6,7 @@ import java.util.Objects;
  * Класс описывает работу модели данных, представляющую клиента банка
  * @author ALEKSEI KOROTKOV
  * @version 1.0
+ * href="{@docRoot}/target/site/apidocs/ru/job4j/bank/User.html"
  */
 public class User {
     /**

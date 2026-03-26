@@ -9,6 +9,7 @@ import java.util.Map;
  * Класс описывает работу модели данных банковского сервиса
  * @author ALEKSEI KOROTKOV
  * @version 1.0
+ * href="{@docRoot}/target/site/apidocs/ru/job4j/bank/BankService.html"
  */
 public class BankService {
     /**
