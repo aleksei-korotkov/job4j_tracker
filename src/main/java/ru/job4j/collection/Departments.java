@@ -3,6 +3,7 @@ package ru.job4j.collection;
 import java.util.*;
 
 public class Departments implements Comparator<String> {
+
     public static List<String> fillGaps(List<String> departments) {
         Set<String> temp = new LinkedHashSet<>();
         for (String value : departments) {
