@@ -33,14 +33,12 @@ public class AnalyzeByMap {
     }
 
     public static List<Label> averageScoreBySubject(List<Pupil> pupils) {
-        int sumScores;
         int numberElements = 0;
         List<Label> labelList = new ArrayList<>();
         Map<String, Integer> sumScoreSubject = new LinkedHashMap<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                sumScores = sumScoreSubject.getOrDefault(subject.name(), 0);
-                sumScoreSubject.put(subject.name(), sumScores + subject.score());
+                sumScoreSubject.merge(subject.name(), subject.score(), (oldValue, newValue) -> oldValue + newValue);
             }
             numberElements++;
         }
@@ -66,13 +64,11 @@ public class AnalyzeByMap {
     }
 
     public static Label bestSubject(List<Pupil> pupils) {
-        int sumScores;
         List<Label> labelList = new ArrayList<>();
         Map<String, Integer> sumScoreSubject = new LinkedHashMap<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                sumScores = sumScoreSubject.getOrDefault(subject.name(), 0);
-                sumScoreSubject.put(subject.name(), sumScores + subject.score());
+                sumScoreSubject.merge(subject.name(), subject.score(), (oldScore, newScore) -> oldScore + newScore);
             }
         }
         for (String string : sumScoreSubject.keySet()) {
